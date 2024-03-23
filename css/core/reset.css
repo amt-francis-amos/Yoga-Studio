@@ -1,0 +1,43 @@
+/* ---- RESET--- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JOST", sans-serif;
+    line-height: 1.7;
+    list-style:none;
+  }
+  
+
+  
+  a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+    list-style: none;
+    color:var(--color-primary-lighter);
+  }
+  
+  section{
+    padding:40px 0;
+  }
+  
+  
+  
+  img {
+    width: 100%;
+  }
+  
+
+  .intro{
+    margin-top:5.5em;
+ }
+ 
+ .intro h1{
+     font-size:var(--fs-900);
+ }
+
+ .intro p{
+    font-weight:var(--fw-normal);
+    font-size:20px;
+ }

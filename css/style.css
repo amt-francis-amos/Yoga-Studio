@@ -1,0 +1,472 @@
+/* ---Global fonts----- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+/* --- Global Variables--- */
+:root {
+  --blue-black: #1a1a4e;
+  --hot-pink:#da4286 ;
+  --lighter-pink:#fdf5f9;
+  --dark-color:#030330;
+  --lighter-sea-blue:#edf0f5;
+  --light-white:#f8f8f8;
+  
+
+
+  --fw-light:200;
+  --fw-normal:400;
+  --fw-bold:600;
+  --fw-bolder:700;
+  
+  --fs-200:1.25;
+  --fs-100:0.65rem;
+  --fs-300:0.75rem;
+  --fs-400:1.0625rem;
+  --fs-600:1.625rem;
+  --fs-900:2.5rem;
+}
+
+
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* ------- HEADER STYLING ---- */
+
+
+.nav-item{
+  display:block;
+}
+
+
+
+.top-nav{
+  width:100%;
+  height:45px;
+  color:var(--light-white);
+   background:var(--hot-pink);
+}
+
+.top-nav h3{
+    font-size:var(--fs-300);
+    line-height:44px;
+    text-transform: uppercase;
+   
+}
+
+
+
+.top-nav h3 .caps{
+  text-transform:capitalize;
+}
+
+.top-nav span{
+  position: relative;
+}
+
+
+.top-nav a::after{
+    content:'';
+    width:92px;
+    height:1px;
+    background:var(--blue-black);
+    display: block;
+    position:absolute;
+    top:18px;
+    font-size:var(--fs-400);
+    right:0px;
+}
+
+
+
+.arrow-right{
+  width:13px;
+  margin-left:5px;
+}
+
+
+header{
+  width:100%;
+  height:100vh;
+  background-image:url('../images/hero-bg-2.png');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.navbar-nav .nav-link{
+  color:var(--light-white);
+  font-size: var(--fs-300);
+}
+
+.navbar-nav .nav-item{
+    margin:0px 15px;
+    display:block;
+}
+
+.nav-logo{
+  width:200px;
+}
+
+.btn {
+  padding: 10px 18px;
+  display:flex;
+  display:inline-block;
+  align-items:center;
+  gap:1em;
+}
+
+.btn-brand{
+  background:var(--hot-pink);
+  color:#fff;
+  border-radius:0px;
+  font-size:var(--fs-100);
+  border-bottom:2px solid #fff;
+}
+
+.btn-brand:hover{
+  background:#920b48;
+  color:#fff;
+  border-bottom:2px solid #fff;
+}
+
+.btn-arrow{
+  width:13px;
+  margin-left:10px;
+}
+
+
+/* -----END OF HEADER SECTION---- */
+
+
+
+/* ------ MAIN SECTION----- */
+
+
+/* ---HERO STYLING------ */
+
+.hero-content{
+      width:100%;
+      position:absolute;
+      top:43%;
+     
+
+}
+
+.hero-content h2{
+  color:var(--hot-pink);
+  font-size:var(--fs-200);
+  margin-bottom:20px;
+}
+
+.hero-content h1{
+   font-size:60px;
+   color:var(--light-white);
+   margin-top:0.5em;
+  
+}
+
+.hero-content p{
+  font-size:var(--fs-600);
+  color:#fff;
+  margin-top:1em;
+  font-weight:var(--fw-light);
+}
+
+
+.btn-1{
+   display:flex;
+   gap:1em;
+}
+
+.btn-primary{
+  background:transparent;
+  color:#fff;
+  border:none;
+  text-transform:uppercase;
+  font-size:var(--fs-100);
+  
+}
+
+.btn-primary:hover{
+  background:transparent;
+}
+
+.btn-primary img{
+    width:17px;
+}
+
+
+.side-icons{
+  position:absolute;
+  top:43%;
+  left:0;
+  color:#fff;
+  
+}
+
+.side-icons ul{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top:25px;
+}
+
+
+
+.side-icons ul li{
+    margin:8px 0;
+    font-size:var(--fs-300);
+}
+
+
+.side-icons ul li::after{
+    content:'';
+    width:35px;
+    height:1px;
+    display:block;
+    background:var(--light-white);
+    margin:5px 0;
+}
+
+
+.side-icons .progress{
+   position: relative;
+   width:35px;
+   height:35px;
+   left:40%;
+   border-radius:50%;
+   color:#fff;
+   border:-1px solid #fff;
+   background:#fff linear-gradient(to right, transparent 50%, var(--hot-pink)0);
+}
+
+.side-icons .fa{
+    position:absolute;
+    top:50%;
+    left:50%;
+    font-size:10px;
+    transform:translate(-50%, -50%);
+    z-index:1;
+}
+
+
+.side-icons .progress::before{
+   content:'';
+   display:block;
+   height:100%;
+   margin-left:50%;
+   transform-origin:left;
+   border-radius:0 100% 100% 0/50%;
+}
+
+.side-icons .progress::after{
+   content:'';
+   position:absolute;
+   inset:3px;
+   border-radius:50%;
+   background:#000;
+   
+}
+
+/* -----END OF HERO STYLING----- */
+
+
+/* ---- STORY STYLING ----- */
+
+
+.img-box{
+  position:relative;
+  margin-bottom:1em;
+}
+
+
+.img-box .img-1{
+    width:50%;
+    height:55vh;
+    object-fit:cover;
+    
+}
+
+
+.img-box .img-2{
+    width:30%;
+    height:43vh;
+    object-fit:cover;
+    position:absolute;
+    bottom:0;
+    right:18%;
+}
+
+.img-box .img-3{
+    max-width:350px;
+    height:30vh;
+    object-fit:cover;
+    position:absolute;
+    bottom:-58%;
+    right:18%;
+    z-index:1;
+}
+
+
+
+
+.story-details{
+  margin-top:4em;
+}
+
+.story-details h4{
+  color:var(--hot-pink);
+  font-size:var(--fs-300);
+}
+
+.story-details h1{
+    font-size:30px;
+    font-weight:var(--fw-bold);
+}
+
+.story-details p{
+   max-width:400px;
+   font-weight:var(--fw-lighter);
+   color:var(--fs-900);
+}
+
+
+.btn-3{
+ padding:13px 20px;
+ background:var(--light-white);
+ color:var(--hot-pink);
+ text-transform:uppercase;
+ font-size:var(--fs-100);
+ border-bottom:3px solid var(--hot-pink);
+ margin-top:2em;
+ display:inline-block
+}
+
+.btn-3:hover{
+  background:var(--light-white);
+ color:var(--hot-pink);
+}
+
+span img{
+  width:18px;
+  margin-left:2em;
+}
+
+/* ---- END OF STORY STYLING ----- */
+
+/* -----CLASSES STYLING ----- */
+
+.classes{
+    background:var(--blue-black);
+    padding:100px 0;
+    position:relative;
+}
+
+
+.classes-heading h1{
+  color:#fff;
+}
+.classes-heading p{
+  color:#fff;
+}
+
+.classes-img{
+  padding:1% 0%;
+  width:100%;
+  height:100vh;
+  object-fit:cover;
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-image:url('../images/image5.jpg');
+
+}
+
+.classes-info{
+  min-height:100vh;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   color:#fff;
+   font-size:var(--fs-600);
+   font-weight:var(--fw-bold);
+}
+
+.classes-info p{
+   max-width:100px;
+   text-align:center;
+   line-height:34px;
+}
+
+.move{
+   position:absolute;
+  bottom:0;
+   left:50%;
+   transform:translate(-50%, -50%);
+}
+/* -----END OF CLASSES STYLING ----- */
+
+
+
+/* ----- YOGA BENEFITS ---- */
+
+.title{
+  margin-bottom:5em;
+}
+
+.title h1{
+  color:var(--blue-black);
+}
+
+
+
+
+.benefit-info img{
+    width:70px;
+}
+
+.benefit-info{
+  position:relative;
+ 
+}
+
+
+.benefit-info::before{
+    content:'';
+    width:180px;
+    height:180px;
+    background:var(--lighter-pink);
+    display: block;
+    border-radius:50%;
+    position:absolute;
+    z-index:-1;
+    left:-40px;
+    top:-60px;
+}
+
+.benefit-info h2{
+  font-size:var(--fs-400);
+}
+
+
+.benefit-info p{
+  font-family:montserrat;
+    width:100%;
+     max-width:249px;
+     font-size:13px;
+}
+/* ----- END OF YOGA BENEFITS ---- */
+
+
+
+
+
+
+
+/* ------END OF  MAIN SECTION----- */
+
