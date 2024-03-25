@@ -521,7 +521,7 @@ span img{
   .img-slider img{
        width:100%;
        max-width:330px;
-       height:32vh;
+       height:35vh;
        object-fit:cover;
         position:absolute;
         top:-42%;
@@ -558,7 +558,7 @@ span img{
   .arrows{
     position:absolute;
     right:10%;
-    top:50%;
+    top:60%;
     
   }
 
@@ -593,10 +593,12 @@ span img{
 
 .testimonial-item {
   display: none;
+  margin-top:2em;
 }
 
 .testimonial-item p{
-     max-width:700px;
+     width:100%;
+     max-width:800px;
      margin:auto;
      font-size:var(--fs-600);
      margin-bottom:1em;
@@ -624,9 +626,93 @@ span img{
   
 }
 
-
-
 /* -----END OF TESTIMONIAL STYLING ---- */
+
+
+
+/* -----NEWSLETTER STYLING ---- */
+.newsletter {
+  background-color:var(--hot-pink);
+  padding: 50px 0;
+  
+}
+
+
+
+.newsletter-text {
+   color:#fff;
+   font-size:20px;
+  
+}
+
+
+
+.newsletter-input {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:2em;
+  
+
+}
+
+
+.newsletter-input input {
+  width:100%;
+  padding:13px;
+  max-width: 450px;
+  font-size: 16px;
+  border:none;
+  background-color: transparent;
+  outline:none;
+}
+
+
+.input-box{
+  width:82%;
+  max-width:480px;
+  height:43px;
+  display:flex;
+  align-items:center;
+  background:#fff;
+ position: relative;
+}
+
+
+.input-box .btn-4{
+  padding:11px 15px;
+  background:var(--blue-black);
+  color:#fff;
+  text-transform:uppercase;
+  font-size:var(--fs-100);
+  position:absolute;
+  right:0;
+  top:1%;
+}
+
+
+
+.input-box span img{
+  width:16px;
+}
+
+
+
+/* -----END OF NEWSLETTER STYLING ---- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
