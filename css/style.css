@@ -656,8 +656,7 @@ span img{
   align-items:center;
   justify-content:center;
   gap:2em;
-  
-  position: relative;
+
 }
 
 
@@ -679,7 +678,7 @@ span img{
   display:flex;
   align-items:center;
   background:#fff;
- 
+  position: relative;
 }
 
 
@@ -690,7 +689,7 @@ span img{
   text-transform:uppercase;
   font-size:var(--fs-100);
   position:absolute;
-  right:18.5%;
+  right:-1%;
   top:1%;
 }
 
@@ -708,7 +707,61 @@ span img{
 
 
 
+/* ----- FOOTER STYLING---- */
 
+.footer{
+    padding:50px 0;
+    background:#000;
+}
+
+
+.footer-info .footer-logo{
+      width:200px;
+      
+}
+
+
+.footer-info ul li{
+  margin:10px 25px;
+  list-style-type:none;
+}
+
+.footer-info ul li a{
+  color:#fff;
+}
+
+.footer-info h2{
+  font-size:var(--fs-400);
+  color:#fff;
+}
+
+.footer-text{
+  font-size:20px;
+}
+
+.footer-media {
+  color:#fff;
+  margin-top:10px;
+  
+}
+
+.footer-media h3{
+  margin-left:15px;
+  font-size:var(--fs-400);
+  margin-bottom:20px;
+}
+
+.social-media{
+  display:flex; 
+  align-items:center;
+  margin:0;
+}
+
+
+.social-media img {
+    width:30px;
+    margin:0 20px; 
+}
 
 
 
