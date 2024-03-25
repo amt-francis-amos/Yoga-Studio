@@ -425,14 +425,12 @@ span img{
 
 
 
-
 .benefit-info img{
     width:70px;
 }
 
 .benefit-info{
   position:relative;
- 
 }
 
 
@@ -455,10 +453,11 @@ span img{
 
 
 .benefit-info p{
-  font-family:montserrat;
+   font-family:montserrat;
     width:100%;
      max-width:249px;
      font-size:13px;
+    
 }
 /* ----- END OF YOGA BENEFITS ---- */
 
@@ -471,7 +470,7 @@ span img{
   .online{
     background:var(--hot-pink);
     padding:30px 0;
- 
+    z-index:-1;
 
   }
 
@@ -484,45 +483,48 @@ span img{
     color:#fff;
   }
 
+  .left-space{
+    margin-bottom:7em;
+    line-height:1.3;
+    margin-left:8em;
+  }
 
 
   .slider{
     padding:0;
     position:relative;
+    display: flex; 
+    background:var(--light-white);
   }
 
-  .slider-box {
-    width: 100%;
-   
-  }
+  .slider-box.hidden {
+    transform: translateX(-100%);
+}
 
+.slider-box.prev-hidden {
+    transform: translateX(100%);
+}
 
- 
 
   .img-slider{
     width:100%;
-    background:var(--light-white);
-    padding:30px 6%;
+    padding:30px 0;
     height:40vh;
     position: relative;
-   
+    display: flex;
+    flex-direction: column;
+    transition: transform 1s ease; 
   }
 
  
-  .left-space{
-    margin-bottom:7em;
-    line-height:1.3;
-    margin-left:2em;
-  }
-
+ 
   .img-slider img{
        width:100%;
-       max-width:290px;
+       max-width:330px;
        height:32vh;
        object-fit:cover;
         position:absolute;
         top:-42%;
-       
   } 
 
   .content{
@@ -549,7 +551,9 @@ span img{
     color:#fff;
     font-size:var(--fs-200);
   }
-
+  
+  
+  
 
   .arrows{
     position:absolute;
