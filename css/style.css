@@ -596,6 +596,10 @@ span img{
   margin-top:2em;
 }
 
+.testimonial-item h3{
+  font-size:var(--fs-400);
+}
+
 .testimonial-item p{
      width:100%;
      max-width:800px;
