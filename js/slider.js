@@ -26,3 +26,21 @@ const prevButton = document.querySelector('.prev');
           imgSlider.style.transform = 'translateX(-100%)';
       }
   });
+
+
+
+
+//   TESTIMONAL SLIDER
+const buttons = document.querySelectorAll('.testimonial-buttons button');
+    const testimonials = document.querySelectorAll('.testimonial-item');
+
+    function showTestimonial(index) {
+      testimonials.forEach(testimonial => {
+        testimonial.classList.remove('active');
+      });
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
+      testimonials[index].classList.add('active');
+      buttons[index].classList.add('active');
+    }

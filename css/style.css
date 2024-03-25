@@ -580,5 +580,56 @@ span img{
 
 /* -----END OF ONLINE STYLING----- */
 
+
+
+/* ----- TESTIMONIAL STYLING--- */
+
+
+#testimonial {
+  background-color: #fff;
+  padding:50px 0;
+}
+
+
+.testimonial-item {
+  display: none;
+}
+
+.testimonial-item p{
+     max-width:700px;
+     margin:auto;
+     font-size:var(--fs-600);
+     margin-bottom:1em;
+}
+
+.testimonial-item.active {
+  display: block;
+}
+.testimonial-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.testimonial-buttons button {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 50%;
+  width: 15px;
+  border:1px solid #666;
+  height: 15px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.testimonial-buttons button.active {
+  background-color:var(--hot-pink);
+  
+}
+
+
+
+/* -----END OF TESTIMONIAL STYLING ---- */
+
+
+
+
 /* ------END OF  MAIN SECTION----- */
 
