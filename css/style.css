@@ -671,7 +671,7 @@ span img{
 .input-box{
   width:82%;
   max-width:480px;
-  height:43px;
+  height:38px;
   display:flex;
   align-items:center;
   background:#fff;
@@ -680,7 +680,7 @@ span img{
 
 
 .input-box .btn-4{
-  padding:11px 15px;
+  padding:10px 15px;
   background:var(--blue-black);
   color:#fff;
   text-transform:uppercase;
