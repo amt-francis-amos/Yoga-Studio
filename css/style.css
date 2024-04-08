@@ -93,8 +93,6 @@ header{
   background-image:url('../images/hero-bg-2.png');
   background-size: cover;
   background-position:center;
-  background-repeat: no-repeat;
-  overflow: hidden;
   position: relative;
 }
 
@@ -277,6 +275,8 @@ header{
 
 
 /* ---- STORY STYLING ----- */
+
+
 
 
 .img-box{
@@ -723,6 +723,7 @@ span img{
 
 .footer-info ul li{
   margin:10px 25px;
+  font-size:var(--fs-300);
   list-style-type:none;
 }
 
@@ -731,7 +732,7 @@ span img{
 }
 
 .footer-info h2{
-  font-size:var(--fs-400);
+  font-size:var(--fs-300);
   color:#fff;
 }
 
@@ -746,33 +747,159 @@ span img{
 }
 
 .footer-media h3{
-  margin-left:15px;
-  font-size:var(--fs-400);
+  font-size:var(--fs-300);
   margin-bottom:20px;
 }
 
 .social-media{
   display:flex; 
   align-items:center;
-  margin:0;
+  gap:2em;
 }
 
+.social-media i{
+  color:var(--hot-pink);
+  font-size:25px;
+ 
 
-.social-media img {
-    width:30px;
-    margin:0 20px; 
 }
-
-
-
-
-
-
-
-
-
 
 
 
 /* ------END OF  MAIN SECTION----- */
 
+
+
+
+/* ------ RESPONSIVENESSS------- */
+
+
+@media(max-width:992px){
+
+.nav-logo{
+  width:120px;
+}
+
+.navbar{
+  padding:0 10%;
+}
+
+
+header{
+  width:100%;
+    height:47vh;
+    object-fit: center;
+ 
+}
+
+
+
+.navbar-toggler {
+   background:white;
+}
+
+
+.hero-content{
+  top:20%;
+  padding:0 11%;
+}
+
+.hero-content h1{
+  font-size:17px;
+}
+
+.hero-content h2{
+  font-size:10px;
+}
+
+.hero-content p{
+  font-size:var(--fs-300);
+ 
+}
+
+.side-icons{
+  top:20%;
+  left:-3%;
+}
+
+
+.side-icons ul li{
+  margin:2px 0;
+  font-size:10px;
+}
+
+.side-icons ul li::after{
+  content:'';
+  width:15px;
+  height:1px;
+  margin:1px 0;
+}
+
+
+.side-icons .progress{
+ width:25px;
+ height:25px;
+ left:55%;
+ 
+}
+
+.side-icons .fa{
+  top:50%;
+  left:50%;
+  font-size:7px;
+}
+
+
+.img-box{
+  margin-bottom:1em;
+}
+
+
+.img-box .img-1{
+    width:60%;
+    height:40vh;
+    object-fit:cover;
+    
+}
+
+
+.img-box .img-2{
+    width:30%;
+    height:30vh;
+    object-fit:cover;
+    right:8%;
+  
+}
+
+.img-box .img-3{
+    max-width:200px;
+    height:20vh;
+    object-fit:cover;
+    bottom:-55%;
+    right:18%;
+  
+}
+
+.story-details{
+  margin-top:15em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
